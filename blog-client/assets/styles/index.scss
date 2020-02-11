@@ -1,0 +1,112 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+body {
+  background: #eff0f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  color: rgb(47, 48, 55);
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 600px;
+  height: 240px;
+  border-radius: 8px;
+  background: white;
+  padding: 24px;
+  margin-top: 24px;
+  cursor: pointer;
+  transition: 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  &:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.post-title {
+}
+
+.post-text {
+}
+
+.post-author {
+  font-size: 16px;
+}
+
+.post-container {
+  width: 800px;
+  min-height: 240px;
+  border-radius: 8px;
+  background: white;
+  padding: 48px;
+}
+
+.post-view-title {
+  margin-bottom: 24px;
+}
+
+.post-view-text {
+  font-size: 18px;
+}
+
+.comments-title {
+  margin-top: 48px;
+}
+
+.comment-container {
+  padding-top: 24px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.form-user {
+  width: 300px;
+}
+
+.form-button {
+  max-width: 200px;
+}
+
+.comment-message {
+  font-weight: bold;
+}
+
+.btn {
+  border-radius: 3px;
+  border-color: lightblue;
+}
+
+.btn.btn-nav-secondary {
+  border-color: white;
+}
+
+#delete-btn {
+  float: right;
+}
+
+#back-button {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+nav {
+  display: flex;
+  width: 100vw;
+  padding: 10px 120px;
+  background: white;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+#content {
+  padding: 100px 0;
+}

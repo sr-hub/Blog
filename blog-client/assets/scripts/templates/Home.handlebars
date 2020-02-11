@@ -1,0 +1,14 @@
+<div id='message'></div>
+{{#each posts as |post|}}
+<div data-id="{{post._id}}" class="post">
+  <h2 class='post-title'>{{limit post.title 25}}</h2>
+  <p class='post-text'>{{limit post.content 240}}</p>
+  <h3 class='post-author'>Posted by
+    {{#if post.owner.username}}
+    {{post.owner.username}}
+    {{else}}
+    anonymous
+    {{/if}}
+  </h3>
+</div>
+{{/each}}

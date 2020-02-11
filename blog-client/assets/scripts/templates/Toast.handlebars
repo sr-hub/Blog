@@ -1,0 +1,10 @@
+<div id='toast' role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="true"
+  data-delay='2500' style='position: absolute; left: 0; right: 0; top: 50px; margin: auto;'>
+  <div style='background: rgba(0, 0, 0, 0.1);' class="toast-header">
+    {{!-- <img src="..." class="rounded mr-2" alt="..."> --}}
+    <strong style='font-size: 28px; margin: 0 auto;' class="mr-auto">{{opts.type}}</strong>
+  </div>
+  <div class="toast-body">
+    {{opts.text}}
+  </div>
+</div>
